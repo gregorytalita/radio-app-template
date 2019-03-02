@@ -1,0 +1,55 @@
+:import('../../assets/css/Constants.css') {
+    light-color: dark-color;
+}
+
+:root {
+    --light-color: light-color;
+}
+
+:local(.bandShape) {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+    
+:local(.bandImg) {
+    height: 100%;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .5s;
+    transition: all .5s; 
+}
+
+:local(.bandCaption) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+}
+
+:local(.bandShape:hover .bandCaption) {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+:local(.bandShape:hover .bandImg) {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(3px) brightness(80%);
+    filter: blur(3px) brightness(80%); 
+}

@@ -1,0 +1,24 @@
+:import('../../assets/css/Constants.css') {
+    primary-color: primary-color;
+    typograph-font: typograph-font; 
+}
+
+:root {
+    --primary-color: primary-color;
+    --typograph-font: typograph-font;
+}
+
+:local(.font) {
+    color: var(--primary-color);
+    font-family: var(--typograph-font);
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:local(.icon) {
+    width: 32px;
+    height: 32px;
+}

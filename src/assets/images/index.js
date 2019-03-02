@@ -1,0 +1,5 @@
+export { default as Switch } from './switch.png'
+export { default as Frank } from './frankFitts.jpeg'
+export { default as Ba } from './ba.png'
+export { default as Colours } from './coloursOfBubbles.jpeg'
+export { default as Wolfsome } from './wolfsome.jpg'

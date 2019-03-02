@@ -1,0 +1,96 @@
+:import('../../assets/css/Constants.css') {
+    primary-color: primary-color;
+    secondary-color: secondary-color;
+    terciary-color: terciary-color;
+    fourth-color: fourth-color;
+    fifth-color: fifth-color;
+    light-color: light-color;
+    typograph-font: typograph-font; 
+}
+
+:root {
+    --primary-color: primary-color;
+    --secondary-color: secondary-color;
+    --terciary-color: terciary-color;
+    --fourth-color: fourth-color;
+    --fifth-color: fifth-color;
+    --light-color: light-color;
+    --typograph-font: typograph-font;
+}
+
+:local(.wrapper) {
+    max-width: 500px;
+    margin: auto;
+}
+
+:local(.header) {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+:local(.title) {
+    font-family: var(--typograph-font);
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin: 0;
+    font-size: 22px
+}
+
+:local(.tabBarTitle) {
+    color: var(--secondary-color);
+    font-size: 11px;
+    font-family: var(--typograph-font);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+:local(.tabBarStationTitle) {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-family: var(--typograph-font);
+    text-align: center;
+    margin: 0;
+}
+
+:local(.switchIcon) {
+    width: 22px;
+    height: 26px;
+}
+
+:local(.arrowIcon) {
+    width: 14px;
+    height: 24px;
+}
+
+:local(.main) {
+    background-color: var(--terciary-color);
+    height: calc(100vh - 183px);
+    padding: 2rem 1rem;
+    margin-top: 80px; 
+    margin-bottom: 104px;
+    overflow-y: auto;
+}
+
+:local(.footer) {
+    position: fixed;
+    bottom: 0;
+    height: 103px;
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--fourth-color);
+    border-top: 1px solid var(--fifth-color);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}

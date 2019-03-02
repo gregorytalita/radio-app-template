@@ -1,0 +1,104 @@
+:import('../../assets/css/Constants.css') {
+    light-color: dark-color;
+}
+
+:root {
+    --light-color: light-color;
+}
+
+:local(.icon) {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    border: 5px solid transparent;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+:local(.bar) {
+    height: 3px;
+    width: 15px;
+    display: block;
+    margin: 3px auto 0px;
+    position: relative;
+    background-color: var(--light-color);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 25px;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+}
+
+:local(.icon .bar) {
+    position: absolute;
+}
+
+:local(.icon .bar:nth-of-type(1)) {
+    top: 0px;
+    -moz-transition: all 0.3s ease 0.3s;
+    -o-transition: all 0.3s ease 0.3s;
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-delay: 0.3s, 0.1s;
+    transition: all 0.3s ease 0.3s;
+    transform: rotate(-35deg);
+}
+
+:local(.icon .bar:nth-of-type(2)) {
+    top: 8px;
+    -moz-transition: all 0.3s ease 0.3s;
+    -o-transition: all 0.3s ease 0.3s;
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-delay: 0.3s, 0.1s;
+    transition: all 0.3s ease 0.3s;
+    transform: rotate(35deg);
+}
+
+:local(.icon .bar:nth-of-type(3)) {
+    top: 7.75px;
+    -moz-transition: opacity 0.3s ease 0.3s;
+    -o-transition: opacity 0.3s ease 0.3s;
+    -webkit-transition: opacity 0.3s ease;
+    -webkit-transition-delay: 0.3s, 0.1s;
+    transition: opacity 0.8s ease 0.2s;
+    opacity: 0;
+}
+
+:local(.icon:hover .bar:nth-of-type(1)) {
+    top: 0px;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transition: all 0.3s ease 0.1s;
+    -o-transition: all 0.3s ease 0.1s;
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-delay: 0.1s, 0.5s;
+    transition: all 0.3s ease 0.1s;
+}
+
+:local(.icon:hover .bar:nth-of-type(2)) {
+    top: 16px;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transition: all 0.3s ease 0.1s;
+    -o-transition: all 0.3s ease 0.1s;
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-delay: 0.1s, 0.5s;
+    transition: all 0.3s ease 0.1s;
+}
+
+:local(.icon:hover .bar:nth-of-type(3)) {
+    opacity: 1;
+}
+  

@@ -1,0 +1,12 @@
+:export {
+    primary-color: #A2ABBD;
+    secondary-color: #ECAA5B;
+    terciary-color: #2B2B36;
+    fourth-color: #25252F;
+    fifth-color: #515561;
+
+    light-color: #FFFFFF;
+    dark-color: #22222B;
+
+    typograph-font: 'Helvetica Neue', sans-serif;
+}
